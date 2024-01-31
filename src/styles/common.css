@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&display=swap');
+@font-face {
+    font-family: e-ukraine;
+    src: url(/fonts/e-Ukraine.otf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(./fonts/Bebas_Neue_Cyrillic.ttf);
+}
+
+body{
+    font-family: e-ukraine;
+    overflow-x: hidden;
+}
+
+.main__timer{
+    font-family: Bebas;
+}
