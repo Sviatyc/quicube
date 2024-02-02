@@ -14,6 +14,7 @@ body{
     overflow-x: hidden;
 }
 
-.main__timer{
-    font-family: Bebas;
+svg{
+    color: white;
+    transition: 0.2ms;
 }

@@ -117,7 +117,7 @@
     color: #0B0A07;
     font-size: 248px;
     line-height: 248px;
-    
+    font-family: Bebas;
 }
 
 
@@ -171,9 +171,9 @@
 }
 
 .reset__block:hover .reset__text{
-    color: #92c8f1
+    color: rgb(159, 114, 29);
 }
 
-.reset__block:hover .reset__button__image{
-    
+.reset__block:hover svg{
+    color: rgb(159, 114, 29);
 }

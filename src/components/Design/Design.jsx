@@ -36,7 +36,9 @@ export default function Design(){
                                     Скинути результат
                                 </label>
                                 <button id="reset__button">
-                                    <img src="./image/clear__button.png" alt="reset" className="reset__button__image" />
+                                    <svg width="79" height="80" viewBox="0 0 79 80" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69.125 16.6667H23.0417V23.3334H16.4584V30H9.87502V36.6667H3.29169V43.3334H9.87502V50H16.4584V56.6667H23.0417V63.3334H75.7084V16.6667H69.125ZM23.0417 56.6667V50H16.4584V43.3334H9.87502V36.6667H16.4584V30H23.0417V23.3334H69.125V56.6667H23.0417ZM49.375 36.6667H42.7917V30H36.2084V36.6667H42.7917V43.3334H36.2084V50H42.7917V43.3334H49.375V50H55.9584V43.3334H49.375V36.6667ZM49.375 36.6667V30H55.9584V36.6667H49.375Z" fill="currentcolor"/>
+                                    </svg>                                
                                 </button>
                             </form>
                         </div>
@@ -63,7 +65,9 @@ export default function Design(){
                                     Скинути результат
                                 </label>
                                 <button id="reset__button">
-                                    <img src="./image/clear__button.svg" alt="reset" className="reset__button__image" />
+                                    <svg width="79" height="80" viewBox="0 0 79 80" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M69.125 16.6667H23.0417V23.3334H16.4584V30H9.87502V36.6667H3.29169V43.3334H9.87502V50H16.4584V56.6667H23.0417V63.3334H75.7084V16.6667H69.125ZM23.0417 56.6667V50H16.4584V43.3334H9.87502V36.6667H16.4584V30H23.0417V23.3334H69.125V56.6667H23.0417ZM49.375 36.6667H42.7917V30H36.2084V36.6667H42.7917V43.3334H36.2084V50H42.7917V43.3334H49.375V50H55.9584V43.3334H49.375V36.6667ZM49.375 36.6667V30H55.9584V36.6667H49.375Z" fill="currentcolor"/>
+                                    </svg>
                                 </button>
                             </form>
                         </div>
