@@ -1,9 +1,7 @@
 .wrapper{
-    min-height: 100%;
     padding: 0 10px;
     margin-top: 10px;
     overflow: hidden;
-    height: 925px;
 }
 
 .logo__block{
@@ -21,7 +19,6 @@
 
 .first__side{
     width: 486px;
-    height: 880px;
 }
 
 .middle__times__table{
@@ -105,7 +102,6 @@
 }
 
 .second__side{
-    width: 682px;
     height: 174px;
     display: flex;
     text-align: center;
@@ -123,7 +119,6 @@
 
 .third__side{
     width: 486px;
-    height: 880px;
 }
 
 .last__times__table{
@@ -177,3 +172,385 @@
 .reset__block:hover svg{
     color: rgb(159, 114, 29);
 }
+
+@media screen and (max-width: 1750px) {
+    .first__side, .third__side{
+        width: 450px;
+        height: 880px;
+    }
+    .middle__times__table{
+        width: 450px;
+    }
+    .last__times__table{
+        width: 450px;
+    }
+    .reset__block{}
+    .middle__times__text__one{}
+    .middle__times{}
+    .middle__times__text__two{}
+    .middle__times__two{}
+    .last__times__text{}
+    .last__times__block__item{}
+    .reset__text{}
+    .main__timer{
+        font-size: 210px;
+    }
+}
+@media screen and (max-width: 1565px) {
+    .first__side, .third__side{
+        width: 430px;
+    }
+    .middle__times__table{
+        width: 430px;
+        height: 700px;
+        padding-top: 20px;
+    }
+    .last__times__table{
+        width: 430px;
+        height: 700px;
+        padding-top: 20px;
+    }
+    .reset__block{
+        height: 240px;
+    }
+    .middle__times__text__one{
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+    .middle__times{
+        font-size: 60px;
+        margin-top: 15px;
+    }
+    .middle__times__text__two{
+        font-size: 30px;
+        margin-top: 45px;
+        line-height: 40px;
+
+    }
+    .middle__times__two{
+        font-size: 60px;
+        margin-top: 15px;
+    }
+    .last__times__text{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .last__times__block{
+        gap: 2px;
+        margin-top: 5px;
+    }
+    .last__times__block__item{
+        font-size: 46px;
+        
+    }
+    .reset__text{
+        font-size: 37px;
+        margin-top: 25px;
+        
+    }
+    .main__timer{
+        font-size: 180px;
+    }
+    .second__side{
+        margin-top: 190px;
+    }
+    #reset__button{
+        margin-left: 310px;
+        margin-top: 0px;
+    }
+    .reset__block:hover #reset__button{
+        margin-left: 290px;
+    }
+    svg{
+        width: 65px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .main__timer{
+        font-size: 160px;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    .first__side{
+        width: 400px;
+    }
+    .third__side{
+        width: 400px;
+    }
+    .middle__times__table{
+        width: 400px;
+    }
+    .last__times__table{
+        width: 400px;
+    }
+    .reset__block{}
+    .middle__times__text__one{}
+    .middle__times{}
+    .middle__times__text__two{}
+    .middle__times__two{}
+    .last__times__text{}
+    .last__times__block__item{}
+    .reset__text{}
+    .main__timer{
+        font-size: 150px;
+    }
+}
+ @media screen and (max-width: 1290px) {
+    .first__side{
+        width: 350px;
+    }
+    .third__side{
+        width: 350px;
+    }
+    .middle__times__table{
+        width: 350px;
+        height: 630px;
+    }
+    .last__times__table{
+        width: 350px;
+        height: 630px;
+    }
+    .reset__block{
+        height: 200px;
+    }
+    .middle__times__text__one{
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    .middle__times{
+        margin-left: 30px;
+        font-size: 45px;
+        margin-top: 5px;
+    }
+    .middle__times__text__two{
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 25px;
+        
+    }
+    .middle__times__two{
+        margin-left: 30px;
+        font-size: 45px;
+        margin-top: 5px;
+    }
+    .last__times__text{
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .last__times__block__item{
+        font-size: 40px;
+        line-height: 60px;
+
+    }
+    .last__times__block{
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+    .reset__text{
+        margin-left: 30px;
+        font-size: 30px;
+        margin-top: 25px;
+        line-height: 35px;
+    }
+    .second__side{
+        margin-top: 150px;
+    }
+    .main__timer{
+        font-size: 11vw;
+    }
+    #reset__button{
+        margin-left: 250px;
+        margin-top: 15px;
+    }
+    .logo{
+        width: 12vw;
+    }
+    .logo__block{
+        display: flex;
+        justify-content: center;
+    }
+    #reset__button{
+        margin-left: 250px;
+        
+    }
+    svg{
+        width: 55px;
+    }
+    .reset__block:hover #reset__button{
+        margin-left: 230px;
+    }
+ }
+
+ @media screen and (max-width: 1130px) {
+    .first__side{
+        width: 300px;
+        height: 560px;
+    }
+    .third__side{
+        width: 300px;
+        height: 560px;
+    }
+    .middle__times__table{
+        width: 300px;
+        height: 560px;
+    }
+    .last__times__table{
+        width: 300px;
+        height: 560px;
+    }
+    .reset__block{
+        height: 160px;
+    }
+    .middle__times__text__one{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .middle__times{
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    .middle__times__text__two{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .middle__times__two{
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    .last__times__text{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .last__times__block__item{
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .reset__text{
+        font-size: 25px;
+        line-height: 27px;
+        margin-top: 25px;
+        
+    }
+    .main__timer{
+        font-size: 100px;
+    }
+    #reset__button{
+        width: auto;
+        height: 40px;
+        margin-left: 200px;
+        margin-top: 8px;
+    }
+    .reset__block:hover #reset__button{
+        margin-left: 180px;
+    }
+    .second__side{
+        margin-top: 125px;
+    }
+ }
+
+ @media screen and (max-width: 969px) {
+    .logo__block{
+        margin-top: 15px;
+    }
+    .page__sides{
+        margin-top: 9px;
+    }
+    .first__side{
+        width: 270px;
+        height: 500px;
+        
+    }
+    .third__side{
+        width: 270px;
+        height: 500px;
+    }
+    .middle__times__table{
+        width: 270px;
+        height: 500px;
+    }
+    .last__times__table{
+        width: 270px;
+        height: 500px;
+    }
+    .reset__block{
+        height: 150px;
+    }
+    .middle__times__text__one{
+        font-size: 20px;
+    }
+    .middle__times{
+        font-size: 39px;
+        margin-top: 10px;
+    }
+    .middle__times__text__two{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .middle__times__two{
+        font-size: 39px;
+        margin-top: 10px;
+    }
+    .last__times__text{
+        font-size: 20px;
+    }
+    .last__times__block__item{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .reset__text{
+        font-size: 23px;
+        margin-top: 15px;
+    }
+    .second__side{
+        margin-top: 94px;
+    }
+    .main__timer{
+        font-size: 10vw;
+    }
+    #reset__button{
+        margin-left: 180px;
+    }
+    svg{
+        width: 45px;
+    }
+    .reset__block:hover #reset__button{
+        margin-left: 160px;
+    }
+
+ } 
+
+ @media screen and (max-width: 849px) {
+    .first__side{}
+    .third__side{}
+    .middle__times__table{}
+    .last__times__table{}
+    .reset__block{}
+    .middle__times__text__one{}
+    .middle__times{}
+    .middle__times__text__two{}
+    .middle__times__two{}
+    .last__times__text{}
+    .last__times__block__item{}
+    .reset__text{}
+    .main__timer{}
+ } 
+
+ /* @media screen and (max-width: ) {
+    .first__side{}
+    .third__side{}
+    .middle__times__table{}
+    .last__times__table{}
+    .reset__block{}
+    .middle__times__text__one{}
+    .middle__times{}
+    .middle__times__text__two{}
+    .middle__times__two{}
+    .last__times__text{}
+    .last__times__block__item{}
+    .reset__text{}
+    .main__timer{}
+ } */
