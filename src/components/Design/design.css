@@ -1,7 +1,7 @@
 .wrapper{
     padding: 0 10px;
     margin-top: 10px;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .logo__block{
@@ -185,14 +185,6 @@
     .last__times__table{
         width: 450px;
     }
-    .reset__block{}
-    .middle__times__text__one{}
-    .middle__times{}
-    .middle__times__text__two{}
-    .middle__times__two{}
-    .last__times__text{}
-    .last__times__block__item{}
-    .reset__text{}
     .main__timer{
         font-size: 210px;
     }
@@ -267,11 +259,17 @@
         width: 65px;
         height: 75px;
     }
+    .page__sides{
+        height: 650px;
+    }
 }
 
 @media screen and (max-width: 1460px) {
     .main__timer{
         font-size: 160px;
+    }
+    .page__sides{
+        height: 650px;
     }
 }
 
@@ -288,16 +286,11 @@
     .last__times__table{
         width: 400px;
     }
-    .reset__block{}
-    .middle__times__text__one{}
-    .middle__times{}
-    .middle__times__text__two{}
-    .middle__times__two{}
-    .last__times__text{}
-    .last__times__block__item{}
-    .reset__text{}
     .main__timer{
         font-size: 150px;
+    }
+    .page__sides{
+        height: 650px;
     }
 }
  @media screen and (max-width: 1290px) {
@@ -384,6 +377,9 @@
     .reset__block:hover #reset__button{
         margin-left: 230px;
     }
+    .page__sides{
+        height: 580px;
+    }
  }
 
  @media screen and (max-width: 1130px) {
@@ -450,6 +446,9 @@
     }
     .second__side{
         margin-top: 125px;
+    }
+    .page__sides{
+        height: 500px;
     }
  }
 
@@ -522,6 +521,9 @@
         margin-left: 160px;
     }
 
+    .page__sides{
+        height: 440px;
+    }
  } 
 
  @media screen and (max-width: 849px) {
@@ -567,7 +569,6 @@
     .reset__text{
         font-size: 20px;
     }
-    .main__timer{}
     .second__side{
         margin-top: 70px;
     }
@@ -580,6 +581,9 @@
     }
     svg{
         width: 40px;
+    }
+    .page__sides{
+        height: 400px;
     }
  } 
 
@@ -650,6 +654,9 @@
     .reset__block:hover #reset__button{
         margin-left: 130px;
     }
+    .page__sides{
+        height: 350px;
+    }
  } 
 
 @media screen and (max-width: 649px) {
@@ -710,6 +717,9 @@
     }
     .reset__block:hover #reset__button{
         margin-left: 120px;
+    }
+    .page__sides{
+        height: 305px;
     }
  } 
 
@@ -779,9 +789,15 @@
     .second__side{
         margin-top: 5px;
     }
+    .page__sides{
+        height: 270px;
+    }
  } 
 
 @media screen and (max-width: 469px) {
+    .page__sides{
+        height: 240px;
+    }
     .first__side{
         width: 130px;
     }
@@ -800,7 +816,6 @@
         height: 90px;
         border-radius: 15px;
     }
-    .middle__times__text__one{}
     .middle__times{
         font-size: 19px;
         margin-top: 5px;
@@ -812,7 +827,6 @@
         font-size: 19px;
         margin-top: 5px;
     }
-    .last__times__text{}
     .last__times__block__item{
         font-size: 19px;
         line-height: 29px;
@@ -840,6 +854,7 @@
     .page__sides{
         flex-direction: column;
         margin-top: 250px;
+        height: 420px;
     }
     .logo{
         width: 70px;

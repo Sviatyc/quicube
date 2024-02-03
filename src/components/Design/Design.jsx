@@ -28,7 +28,21 @@ function toggle__func(){
     setToggle(!toggle)
 }
 
-let min = 0
+// events
+
+let style__color = "#0B0A07"
+
+
+addEventListener('keyup', function(event){
+    if(event.keyCode === 32){
+        if (toggle){
+            setToggle(false)
+            
+        }else{
+            setToggle(true)
+        }
+    }
+})
 
 
     return(
@@ -65,7 +79,7 @@ let min = 0
                         </div>
                     </div>
                     <div className="second__side">
-                        <h1 className="main__timer" onClick={toggle__func}>
+                        <h1 className="main__timer" onClick={toggle__func} style={{color: style__color}}>
                             <span>{String(parseInt(time / 6000) % 60).padStart(2, '0')}</span>
                             <span>:</span>
                             <span>{String(parseInt(time / 100) % 60).padStart(2, '0')}</span>
