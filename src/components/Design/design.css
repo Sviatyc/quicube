@@ -114,6 +114,7 @@
     font-size: 248px;
     line-height: 248px;
     font-family: Bebas;
+    user-select: none;
 }
 
 

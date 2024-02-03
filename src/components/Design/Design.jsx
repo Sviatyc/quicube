@@ -1,7 +1,7 @@
 import React from "react";
 import Timer from "../Timer/Timer.jsx"
 import './design.css'
-
+import { useState, useEffect } from "react";
 
 
 
@@ -9,6 +9,27 @@ import './design.css'
 
 
 export default function Design(){
+const [time, setTime] = useState(0)
+const [toggle, setToggle] = useState(false)
+
+useEffect(()=>{
+    let brake__array = null
+    if (toggle){
+        brake__array = setInterval(() => {
+            setTime(prev => prev + 1)
+        }, 10);
+    }else{
+        clearInterval(brake__array)
+    }
+    return () => clearInterval(brake__array)
+}, [toggle])
+
+function toggle__func(){
+    setToggle(!toggle)
+}
+
+let min = 0
+
 
     return(
         <>
@@ -44,8 +65,12 @@ export default function Design(){
                         </div>
                     </div>
                     <div className="second__side">
-                        <h1 className="main__timer">
-                            01:01,56
+                        <h1 className="main__timer" onClick={toggle__func}>
+                            <span>{String(parseInt(time / 6000) % 60).padStart(2, '0')}</span>
+                            <span>:</span>
+                            <span>{String(parseInt(time / 100) % 60).padStart(2, '0')}</span>
+                            <span>.</span> 
+                            <span>{String(time % 100).padStart(2, '0')}</span>
                         </h1>
                     </div>
                     <div className="third__side">
