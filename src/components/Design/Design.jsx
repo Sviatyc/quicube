@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import Timer from "../Timer/Timer.jsx"
 import './design.css'
 import { useState, useEffect } from "react";
 
 
-
-
-
-
 export default function Design(){
 const [time, setTime] = useState(0)
 const [toggle, setToggle] = useState(false)
+const [color, setColor] = useState('#0B0A07')
 
 useEffect(()=>{
     let brake__array = null
@@ -24,25 +21,53 @@ useEffect(()=>{
     return () => clearInterval(brake__array)
 }, [toggle])
 
-function toggle__func(){
-    setToggle(!toggle)
-}
 
 // events
 
-let style__color = "#0B0A07"
+let getDocRef = useRef(null) 
 
-
-addEventListener('keyup', function(event){
-    if(event.keyCode === 32){
+function timerControl(event) {
+    if(event.keyCode === 32 || event.touches){
         if (toggle){
-            setToggle(false)
-            
+            setToggle(false)  
         }else{
             setToggle(true)
+            setColor('#0B0A07')   
         }
     }
+}
+
+function resTimer(event){
+    if(event.keyCode === 32 || event.touches){
+        if(toggle === false){
+            setColor('green')
+            if(time > 0){
+                setTime(0)
+            }
+        }
+    }
+}
+
+let a = document.querySelector('.main')
+console.log("fff", a);
+
+useEffect(()=>{
+    let getDoc = getDocRef.current;
+    getDoc.addEventListener('touchstart', resTimer)
+    getDoc.addEventListener('touchend', timerControl)
+
+    window.addEventListener('keydown', resTimer)
+    window.addEventListener('keyup', timerControl)
+    return()=>{
+        getDoc.removeEventListener('touchstart', resTimer)
+        getDoc.removeEventListener('touchend', timerControl)
+
+        window.removeEventListener('keydown', resTimer)
+        window.removeEventListener('keyup', timerControl)
+}
 })
+
+
 
 
     return(
@@ -78,8 +103,8 @@ addEventListener('keyup', function(event){
                             </form>
                         </div>
                     </div>
-                    <div className="second__side">
-                        <h1 className="main__timer" onClick={toggle__func} style={{color: style__color}}>
+                    <div className="second__side" >
+                        <h1 className="main__timer" style={{color: color}} ref={getDocRef}>
                             <span>{String(parseInt(time / 6000) % 60).padStart(2, '0')}</span>
                             <span>:</span>
                             <span>{String(parseInt(time / 100) % 60).padStart(2, '0')}</span>

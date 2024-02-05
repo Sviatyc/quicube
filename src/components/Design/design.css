@@ -115,6 +115,7 @@
     line-height: 248px;
     font-family: Bebas;
     user-select: none;
+    transition: 5ms;
 }
 
 
