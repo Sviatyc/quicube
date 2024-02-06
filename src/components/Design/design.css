@@ -971,31 +971,31 @@
     .middle__times__text__one{
         font-size: 3vw;
         margin-top: 24px;
-        margin-left: 24px;
+        margin-left: 17px;
         line-height: 17px;
     }
     .middle__times{
         font-size: 6vw;
         margin-top: 10px;
-        margin-left: 24px;
+        margin-left: 17px;
         letter-spacing: 1px;
     }
     .middle__times__text__two{
         margin-top: 20px;
         font-size: 3vw;
-        margin-left: 24px;
+        margin-left: 17px;
         
     }
     .middle__times__two{
         margin-top: 10px;
-        margin-left: 24px;
+        margin-left: 17px;
         font-size: 6vw;
         letter-spacing: 1px;
     }
     .last__times__text{
         font-size: 14px;
         margin-top: 24px;
-        margin-left: 24px;
+        margin-left: 17px;
         line-height: 16.7px;
     }
     .last__times__block__item{
@@ -1004,7 +1004,7 @@
         letter-spacing: 0.1px;
     }
     .last__times__block{
-        margin-left: 24px;
+        margin-left: 17px;
         margin-top: 5px;
         gap: 8px;
     }
