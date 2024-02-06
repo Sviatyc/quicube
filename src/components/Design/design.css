@@ -734,10 +734,12 @@
     }
     .middle__times__text__one{
         font-size: 15px;
+        
     }
     .middle__times{
         margin-top: 15px;
         line-height: 40px;
+        letter-spacing: 1px;
     }
     .middle__times__text__two{
         font-size: 15px;
@@ -746,6 +748,7 @@
     .middle__times__two{
         margin-top: 15px;
         line-height: 40px;
+        letter-spacing: 1px;
     }
     .last__times__text{
         font-size: 15px;
@@ -753,6 +756,8 @@
     .last__times__block__item{
         line-height: 35px;
         font-size: 24px;
+        letter-spacing: 0.1px;
+        
     }
     .reset__text{
         font-size: 15px;
