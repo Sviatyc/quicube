@@ -3,11 +3,19 @@
     src: url(../../public/fonts/e-Ukraine.otf);
 }
 
+@font-face {
+    font-family: Bebas;
+    src: url(../../public/fonts/Bebas_Neue_Cyrillic.ttf);
+}
 
 
 body{
     font-family: e-ukraine;
     overflow-x: hidden;
+}
+
+h1{
+    font-family: Bebas;
 }
 
 svg{
