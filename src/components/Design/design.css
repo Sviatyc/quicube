@@ -5,6 +5,7 @@
     overflow-y: hidden;
 }
 
+
 /* confirm block */
 
 .confirm__reset__block{
@@ -910,11 +911,12 @@
     }
  } 
 
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 431px) {
     .page__sides{
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 250px;
         height: 420px;
+        
     }
     .logo{
         width: 70px;
@@ -923,75 +925,72 @@
     }
 
     .first__side{
-        width: 182px;
+        width: 45%;
         height: 185px;
     }
     .third__side{
-        width: 182px;
+        width: 45%;
     }
     .middle__times__table{
         height: 237px;
-        width: 182px;
+        width: 100%;
         padding: 1px;
         border-radius: 12px;
     }
     .last__times__table{
         height: 237px;
-        width: 182px;
-        margin-top: 10px;
+        width: 100%;
         padding: 1px;
         border-radius: 12px;
        
     }
     .reset__block{
-        width: 182px;
+        width: 95vw;
         height: 100px;
-        margin-left: 195px;
         border-radius: 12px;
-      
-    
+        margin-bottom: -110px;
     }
 
     
 
     svg{
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
     #reset__button{
         width: 25px;
         height: 25px;
-        margin-left: 140px;
-        margin-top: -32px;
+        margin-left: 80vw;
+        margin-top: 15px;
     }
 
     .reset__block:hover #reset__button{
-        margin-left: 135px;
+        margin-left: 205px;
     }
 
     .middle__times__text__one{
-        font-size: 14px;
+        font-size: 3vw;
         margin-top: 24px;
         margin-left: 24px;
         line-height: 17px;
     }
     .middle__times{
-        font-size: 28px;
+        font-size: 6vw;
         margin-top: 10px;
         margin-left: 24px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     .middle__times__text__two{
         margin-top: 20px;
-        font-size: 14px;
+        font-size: 3vw;
         margin-left: 24px;
         
     }
     .middle__times__two{
         margin-top: 10px;
         margin-left: 24px;
-        font-size: 28px;
-        letter-spacing: 2px;
+        font-size: 6vw;
+        letter-spacing: 1px;
     }
     .last__times__text{
         font-size: 14px;
@@ -1002,29 +1001,113 @@
     .last__times__block__item{
         font-size: 18px;
         line-height: 21.59px;
+        letter-spacing: 0.1px;
     }
     .last__times__block{
         margin-left: 24px;
-        margin-top: 20px;
+        margin-top: 5px;
         gap: 8px;
     }
     .reset__text{
-        margin-top: 24px;
-        margin-left: 19px;
-        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 4vw;
+        font-size: 7vw;
         line-height: 24px;
+        
     }
     .main__timer{
-        font-size: 96px;
+        font-size: 25vw;
+
     }
     .second__side{
         width: 264px;
         height: 67px;
         position: absolute;
-        left: 75px;
+        left: 18vw;
         top: 130px;
     }
+    .confirm__reset__block{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        min-height: 100vh;
+        background-color: rgba(224, 247, 255, 0.944);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+    
+    .confirm__text{
+        margin-top: -10px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #242424;
+        text-shadow: 0 0 1px black;
+        text-align: center;
+    }
+    
+    .confirm__yes{
+        margin-top: 20px;
+        width: 300px;
+        height: 80px;
+        border-radius: 25px;
+        background-color: #279AF1;
+        font-size: 30px;
+        border: none;
+        box-shadow: 0 0 8px grey;
+    }
+    
+    .confirm__no{
+        border-radius: 8px;
+        margin-top: 5px;
+        background-color: orange;
+        border: none;
+        box-shadow: 0 1px 5px grey;
+    }
  } 
+
+
+@media screen and (max-width: 309px) {
+    .wrapper{
+        overflow: hidden;
+    }
+    .second__side{
+        left: 15vw;
+    }
+    .middle__times__text__one{
+        margin-left: 10px;
+    }
+    .middle__times__text__two{
+        margin-left: 10px;
+    }
+    .middle__times{
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .middle__times__two{
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .last__times__block__item{
+        font-size: 18px;
+        line-height: 15px;
+    }
+
+    .last__times__block{
+        margin-left: 10px;
+    }
+
+    .last__times__text{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+}
 
 
  .first__elem__color{

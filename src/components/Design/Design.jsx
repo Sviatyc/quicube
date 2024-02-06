@@ -11,6 +11,7 @@ const [toggle, setToggle] = useState(false)
 const [color, setColor] = useState('#0B0A07')
 const [last__times, setLast__times] = useState([])
 const [display__style, setDisplay__style] = useState('none')
+const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
 useEffect(() => {
     const lastTimesLocal = localStorage.getItem('last__times');
@@ -215,7 +216,7 @@ function middle__ten__func(){
                             <h2 className="last__times__text">
                                 Час останніх складань
                             </h2>
-                                <Scrollbars style={{height: '85%'}}>
+                                <Scrollbars style={{height: windowWidth > 409 ? '85%' : '70%'}}>
                                     <div className="last__times__block">
                                         {last__times__func()}
                                     </div>
