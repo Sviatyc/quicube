@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Timer from "../Timer/Timer.jsx"
+import { Scrollbars } from 'react-custom-scrollbars';
 import './design.css'
 import { useState, useEffect } from "react";
 
@@ -84,6 +85,7 @@ useEffect(()=>{
 
 let last__time__local = localStorage.getItem('last__times')
 
+const colors__for__last__elem = ['rgb(0, 147, 0)','rgb(0, 107, 0)','rgb(18, 78, 0)']
 
 function last__times__func() {
     const lastTimes = JSON.parse(last__time__local);
@@ -92,7 +94,7 @@ function last__times__func() {
     }
     
     return lastTimes.map((item, index) => (
-        <span key={index} className="last__times__block__item">
+        <span key={index} className="last__times__block__item" style={{ color: index >= lastTimes.length - 3 ? colors__for__last__elem[index - lastTimes.length + 3] : 'inherit' }}>
             <span>{String(parseInt(item / 6000) % 60).padStart(2, '0')}</span>
             <span>:</span>
             <span>{String(parseInt(item / 100) % 60).padStart(2, '0')}</span>
@@ -213,19 +215,11 @@ function middle__ten__func(){
                             <h2 className="last__times__text">
                                 Час останніх складань
                             </h2>
-                            <div className="last__times__block">
-                                {last__times__func()}
-                            </div>
-                            <form className="reset__block" onClick={open__confirm}>
-                                <label className="reset__text">
-                                    Скинути результат
-                                </label>
-                                <button id="reset__button" type="button">
-                                    <svg width="79" height="80" viewBox="0 0 79 80" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M69.125 16.6667H23.0417V23.3334H16.4584V30H9.87502V36.6667H3.29169V43.3334H9.87502V50H16.4584V56.6667H23.0417V63.3334H75.7084V16.6667H69.125ZM23.0417 56.6667V50H16.4584V43.3334H9.87502V36.6667H16.4584V30H23.0417V23.3334H69.125V56.6667H23.0417ZM49.375 36.6667H42.7917V30H36.2084V36.6667H42.7917V43.3334H36.2084V50H42.7917V43.3334H49.375V50H55.9584V43.3334H49.375V36.6667ZM49.375 36.6667V30H55.9584V36.6667H49.375Z" fill="currentcolor"/>
-                                    </svg>
-                                </button>
-                            </form>
+                                <Scrollbars style={{height: '85%'}}>
+                                    <div className="last__times__block">
+                                        {last__times__func()}
+                                    </div>
+                                </Scrollbars>
                         </div>
                     </div>
                 </div>
