@@ -11,6 +11,13 @@ const [color, setColor] = useState('#0B0A07')
 const [last__times, setLast__times] = useState([])
 const [display__style, setDisplay__style] = useState('none')
 
+useEffect(() => {
+    const lastTimesLocal = localStorage.getItem('last__times');
+    if (lastTimesLocal) {
+        setLast__times(JSON.parse(lastTimesLocal));
+    }
+}, []);
+
 useEffect(()=>{
     let brake__array = null
     if (toggle){
@@ -24,8 +31,8 @@ useEffect(()=>{
 }, [toggle])
 
 
-
 // events
+
 
 let getDocRef = useRef(null) 
 
@@ -53,6 +60,8 @@ function resTimer(event){
         }
     }
 }
+
+
 
 useEffect(()=>{
     let getDoc = getDocRef.current;
