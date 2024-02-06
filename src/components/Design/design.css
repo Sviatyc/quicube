@@ -1,6 +1,3 @@
-*{
-    font-family: e-ukraine;
-}
 
 .wrapper{
     padding: 0 10px;
@@ -1029,10 +1026,7 @@
     src: url(../../public/fonts/Bebas_Neue_Cyrillic.ttf);
 }
 
-@font-face {
-    font-family: e-ukraine;
-    src: url(../../public/fonts/e-Ukraine.otf);
-}
+
 
 
  
