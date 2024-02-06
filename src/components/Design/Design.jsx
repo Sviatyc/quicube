@@ -103,6 +103,7 @@ function last__times__func() {
 }
 
 
+
 // confirms
 function confirm__reset(){
     localStorage.setItem('last__times', JSON.stringify(last__times))
@@ -116,6 +117,48 @@ function open__confirm(){
 }
 function close__confirm(){
     setDisplay__style('none')
+}
+
+
+// middleresoult
+
+let middle__res = last__times.reduce((total, num) => total + num, 0) / last__times.length
+
+function middle__res__func(){
+    if(last__times.length===0){
+        return(
+            <span>00:00.00</span>
+        )
+    }else{
+        return(
+            <>
+                <span>{String(parseInt(middle__res / 6000) % 60).padStart(2, '0')}</span>
+                <span>:</span>
+                <span>{String(parseInt(middle__res / 100) % 60).padStart(2, '0')}</span>
+                <span>.</span> 
+                <span>{String(parseInt(middle__res % 100)).padStart(2, '0')}</span>
+            </>
+        )
+    }
+}
+
+function middle__ten__func(){
+    let lastTen = last__times.slice(-10).reduce((total, num)=> total + num, 0) / last__times.slice(-10).length
+    if(last__times.length >= 10){
+        return(
+            <>
+                <span>{String(parseInt(lastTen / 6000) % 60).padStart(2, '0')}</span>
+                <span>:</span>
+                <span>{String(parseInt(lastTen / 100) % 60).padStart(2, '0')}</span>
+                <span>.</span> 
+                <span>{String(parseInt(lastTen % 100)).padStart(2, '0')}</span>
+            </>
+        )
+    }else{
+        return(
+            <span>00:00.00</span>
+        )
+    }
 }
 
     return(
@@ -136,19 +179,19 @@ function close__confirm(){
                                 Середній час складання
                             </h2>
                             <p className="middle__times">
-                                04:17,34
+                                {middle__res__func()}
                             </p>
                             <h2 className="middle__times__text__two">
                                 Середній час складання (10р.)
                             </h2>
                             <p className="middle__times__two">
-                                03:14,44
+                                {middle__ten__func()}
                             </p>
-                            <form className="reset__block">
-                                <label htmlFor="reset__button" className="reset__text">
+                            <form className="reset__block" onClick={open__confirm}>
+                                <label className="reset__text">
                                     Скинути результат
                                 </label>
-                                <button id="reset__button">
+                                <button id="reset__button" type="button">
                                     <svg width="79" height="80" viewBox="0 0 79 80" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M69.125 16.6667H23.0417V23.3334H16.4584V30H9.87502V36.6667H3.29169V43.3334H9.87502V50H16.4584V56.6667H23.0417V63.3334H75.7084V16.6667H69.125ZM23.0417 56.6667V50H16.4584V43.3334H9.87502V36.6667H16.4584V30H23.0417V23.3334H69.125V56.6667H23.0417ZM49.375 36.6667H42.7917V30H36.2084V36.6667H42.7917V43.3334H36.2084V50H42.7917V43.3334H49.375V50H55.9584V43.3334H49.375V36.6667ZM49.375 36.6667V30H55.9584V36.6667H49.375Z" fill="currentcolor"/>
                                     </svg>                                
