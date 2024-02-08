@@ -13,15 +13,15 @@ const [last__times, setLast__times] = useState([])
 const [display__style, setDisplay__style] = useState('none')
 const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
+
+const lastTimesLocal = localStorage.getItem('last__times');
+
 useEffect(() => {
-    const lastTimesLocal = localStorage.getItem('last__times');
-    if (lastTimesLocal) {
-        setLast__times(JSON.parse(lastTimesLocal));
-    }
+    lastTimesLocal ? setLast__times(JSON.parse(lastTimesLocal)) : null
 }, []);
 
 useEffect(()=>{
-    let brake__array = null
+    let brake__array
     if (toggle){
         brake__array = setInterval(() => {
             setTime(prev => prev + 1)
@@ -84,12 +84,11 @@ useEffect(()=>{
 
 // history
 
-let last__time__local = localStorage.getItem('last__times')
 
 const colors__for__last__elem = ['rgb(0, 147, 0)','rgb(0, 107, 0)','rgb(18, 78, 0)']
 
 function last__times__func() {
-    const lastTimes = JSON.parse(last__time__local);
+    const lastTimes = JSON.parse(lastTimesLocal);
     if (!Array.isArray(lastTimes)) {
         return null;
     }
