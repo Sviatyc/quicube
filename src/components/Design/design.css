@@ -790,27 +790,3 @@
   }
 }
 
-
-@media screen and (max-height: 947px) {
-  .wrapper{
-    height: 98vh;
-  }
-}
-@media screen and (max-height: 847px) {
-  .wrapper{
-    height: 98vh;
-  }
-  .middle__times__table {
-    height: 788px;
-  }
-  .last__times__table {
-    height: 770px;
-  }
-  .reset__block {
-    height: 240px;
-  }
-  #reset__button{
-    margin-top: -5px;
-  }
-
-}
