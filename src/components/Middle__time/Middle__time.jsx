@@ -1,18 +1,17 @@
-import { timerState } from "../Timer/Timer";
-import { useState, useEffect } from "react";
+// import { timerState } from "../Timer/Timer";
+// import { useState, useEffect } from "react";
+import { local__times } from '../Timer/Timer.jsx'
 import './Middle__time.css'
 
 function Middle__time() {
-  const [local__times, setLocal__times] = useState([]);
-  const toggle = timerState();
-  useEffect(() => {
-    setLocal__times(JSON.parse(localStorage.getItem("local__times")));
-  }, [toggle]);
+  // const [local__times, setLocal__times] = useState([]);
+
+  const local__array = local__times(s=>s.mainArray)
 
   function render__middle__time() {
     let middle__res =
-      local__times.reduce((total, num) => total + num, 0) / local__times.length;
-    if (local__times.length === 0) {
+      local__array.reduce((total, num) => total + num, 0) / local__array.length;
+    if (local__array.length === 0) {
       return <span>00:00.00</span>;
     } else {
       return (

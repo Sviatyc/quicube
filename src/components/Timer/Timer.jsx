@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { create } from "zustand";
+import { persist } from "zustand/middleware"
 import "./Timer.css";
 
 export const timerState = create((set) => ({
@@ -8,17 +9,24 @@ export const timerState = create((set) => ({
   toggleIsFalse: () => set({ toggle: false }),
 }));
 
+export const local__times = create(
+  persist(
+    (set) => ({
+      mainArray: [],
+      addArrayElem: (item) => set(state => ({
+        mainArray: [...state.mainArray, item]
+      }))
+    }),
+    {name: "local__times"}
+  )
+)
+
 export default function Timer() {
   const [timerTime, setTimerTime] = useState(0);
   const { toggle, toggleIsFalse, toggleIsTrue } = timerState();
   const [times__color, setTimer__color] = useState("#0B0A07");
-  const [local__times, setLocal__times] = useState([]);
 
-  useEffect(() => {
-    localStorage.getItem("local__times") === null
-      ? null
-      : setLocal__times(JSON.parse(localStorage.getItem("local__times")));
-  }, []);
+  const updatedTimes = local__times(s => s.addArrayElem)
 
   useEffect(() => {
     let setTime__interval;
@@ -35,9 +43,7 @@ export default function Timer() {
     if (event.keyCode === 32 || event.touches) {
       if (toggle) {
         toggleIsFalse();
-        const updatedTimes = [...local__times, timerTime];
-        setLocal__times(updatedTimes);
-        localStorage.setItem("local__times", JSON.stringify(updatedTimes));
+        updatedTimes(timerTime);
       } else {
         toggleIsTrue();
         setTimer__color("#0B0A07");

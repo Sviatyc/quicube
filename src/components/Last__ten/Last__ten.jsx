@@ -1,19 +1,15 @@
-import { useState, useEffect } from "react";
-import { timerState } from "../Timer/Timer";
 import './Last__ten.css'
+import { local__times } from '../Timer/Timer.jsx';
 function Last__ten() {
-  const [local__times, setLocal__times] = useState([]);
-  const toggle = timerState();
 
-  useEffect(() => {
-    setLocal__times(JSON.parse(localStorage.getItem("local__times")));
-  }, [toggle]);
+  const local__array = local__times(s=>s.mainArray)
+
 
   function render__last__ten() {
     let lastTen =
-      local__times.slice(-10).reduce((total, num) => total + num, 0) /
-      local__times.slice(-10).length;
-    if (local__times.length >= 10) {
+      local__array.slice(-10).reduce((total, num) => total + num, 0) /
+      local__array.slice(-10).length;
+    if (local__array.length >= 10) {
       return (
         <>
           <span>{String(parseInt(lastTen / 6000) % 60).padStart(2, "0")}</span>
