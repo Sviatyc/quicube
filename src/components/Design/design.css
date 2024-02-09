@@ -2,6 +2,7 @@
   padding: 0 10px;
   margin-top: 10px;
   overflow-y: hidden;
+  height: 98vh;
 }
 
 .logo__block {
@@ -677,6 +678,9 @@
 }
 
 @media screen and (max-width: 431px) {
+  .wrapper{
+    padding: 0 11px 0 10px;
+  }
   .page__sides {
     flex-direction: row;
     margin-top: 250px;
@@ -766,6 +770,7 @@
 @media screen and (max-width: 309px) {
   .wrapper {
     overflow: hidden;
+    position: relative;
   }
   .middle__times__text__one {
     margin-left: 10px;
@@ -777,4 +782,35 @@
     font-size: 10px;
     margin-left: 10px;
   }
+  .reset__block{
+    width: 94vw;
+  }
+  #reset__button{
+    margin-left: 75vw;
+  }
+}
+
+
+@media screen and (max-height: 947px) {
+  .wrapper{
+    height: 98vh;
+  }
+}
+@media screen and (max-height: 847px) {
+  .wrapper{
+    height: 98vh;
+  }
+  .middle__times__table {
+    height: 788px;
+  }
+  .last__times__table {
+    height: 770px;
+  }
+  .reset__block {
+    height: 240px;
+  }
+  #reset__button{
+    margin-top: -5px;
+  }
+
 }
