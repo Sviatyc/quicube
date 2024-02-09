@@ -1,0 +1,57 @@
+.main__timer {
+  color: #0b0a07;
+  font-size: 248px;
+  line-height: 248px;
+  font-family: Bebas;
+  user-select: none;
+  transition: 5ms;
+}
+
+@media screen and (max-width: 1750px) {
+  .main__timer {
+    font-size: 210px;
+  }
+}
+@media screen and (max-width: 1565px) {
+  .main__timer {
+    font-size: 180px;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .main__timer {
+    font-size: 160px;
+  }
+}
+@media screen and (max-width: 1390px) {
+  .main__timer {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .main__timer {
+    font-size: 11vw;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .main__timer {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 969px) {
+  .main__timer {
+    font-size: 10vw;
+  }
+}
+@media screen and (max-width: 431px) {
+  .main__timer {
+    font-size: 25vw;
+  }
+}
+@media screen and (max-width: 309px) {
+  .main__timer {
+  }
+}
+@media screen and (max-width: px) {
+  .main__timer {
+  }
+}

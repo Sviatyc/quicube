@@ -1,16 +1,11 @@
-import { useState } from 'react'
-import Design from './components/Design/Design.jsx'
-
-
+import Design from "./components/Design/Design.jsx";
 
 function App() {
-
-
   return (
     <>
-        <Design />
+      <Design />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,116 @@
+.last__times__block {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 13px;
+  margin-left: 46px;
+  margin-top: 33px;
+}
+
+.last__times__block__item {
+  font-size: 54px;
+  opacity: 0.7;
+  line-height: 64.76px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  transition: 1ms;
+}
+
+
+@media screen and (max-width: 1565px) {
+  .last__times__block {
+    gap: 2px;
+    margin-top: 5px;
+  }
+  
+  .last__times__block__item {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .last__times__block__item {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .last__times__block {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .last__times__block__item {
+    font-size: 35px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 969px) {
+  .last__times__block__item {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 849px) {
+  .last__times__block__item {
+    line-height: 42px;
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .last__times__block__item {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .last__times__block {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .last__times__block__item {
+    line-height: 35px;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .last__times__block__item {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .last__times__block {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 469px) {
+  .last__times__block__item {
+    font-size: 19px;
+    line-height: 29px;
+  }
+  .last__times__block {
+    margin-top: 7px;
+  }
+}
+@media screen and (max-width: 431px) {
+  .last__times__block__item {
+    font-size: 18px;
+    line-height: 21.59px;
+    letter-spacing: 0.1px;
+  }
+  .last__times__block {
+    margin-left: 17px;
+    margin-top: 5px;
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 309px) {
+  .last__times__block__item {
+    font-size: 18px;
+    line-height: 15px;
+  }
+
+  .last__times__block {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: px) {
+  
+}
+

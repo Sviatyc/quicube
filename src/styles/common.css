@@ -1,27 +1,26 @@
 @font-face {
-    font-family: e-ukraine;
-    src: url(../../public/fonts/e-Ukraine.otf);
+  font-family: e-ukraine;
+  src: url(./fonts/e-Ukraine.otf);
 }
 
 @font-face {
-    font-family: Bebas;
-    src: url(../../public/fonts/Bebas_Neue_Cyrillic.ttf);
+  font-family: Bebas;
+  src: url(./fonts/Bebas_Neue_Cyrillic.ttf);
 }
 
-
-body{
-    font-family: e-ukraine;
-    overflow-x: hidden;
+body {
+  font-family: e-ukraine;
+  overflow-x: hidden;
 }
 
-h1{
-    font-family: Bebas;
+h1 {
+  font-family: Bebas;
 }
 
-svg{
-    color: white;
-    transition: 0.2ms;
+svg {
+  color: white;
+  transition: 0.2ms;
 }
-*{
-    user-select: none;
+* {
+  user-select: none;
 }
