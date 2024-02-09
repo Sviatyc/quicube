@@ -1,11 +1,11 @@
 @font-face {
   font-family: e-ukraine;
-  src: url(./fonts/e-Ukraine.otf);
+  src: url(../../public/fonts/e-Ukraine.otf);
 }
 
 @font-face {
   font-family: Bebas;
-  src: url(./fonts/Bebas_Neue_Cyrillic.ttf);
+  src: url(../../public/fonts/Bebas_Neue_Cyrillic.ttf);
 }
 
 body {
