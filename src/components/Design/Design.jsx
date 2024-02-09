@@ -14,6 +14,10 @@ export const displayStyle = create((set) => ({
 
 export default function Design() {
   const displayOpen = displayStyle((state) => state.displayOpen);
+  
+  if (!localStorage.getItem("last__times")) {
+    localStorage.setItem("last__times", JSON.stringify([]));
+}
   return (
     <>
       <section>
