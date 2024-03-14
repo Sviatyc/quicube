@@ -1,8 +1,13 @@
+body{
+  overflow-y: hidden;
+}
+
 .wrapper {
   padding: 0 10px;
   margin-top: 10px;
   overflow-y: hidden;
 }
+
 
 .logo__block {
   width: 150px;
@@ -23,7 +28,7 @@
 
 .middle__times__table {
   width: 486px;
-  height: 880px;
+  height: 93vh;
   background-color: #279af1;
   border-radius: 25px;
   color: #f7f9f9;
@@ -98,7 +103,7 @@
 
 .last__times__table {
   width: 486px;
-  height: 865px;
+  height: 91vh;
   margin-top: -80px;
   border-radius: 25px;
   background-color: #b5dcf9;
@@ -133,13 +138,14 @@
   .first__side,
   .third__side {
     width: 450px;
-    height: 880px;
   }
   .middle__times__table {
     width: 450px;
+    height: 93vh;
   }
   .last__times__table {
     width: 450px;
+    height: 91vh;
   }
   .main__timer {
     font-size: 210px;
@@ -152,12 +158,12 @@
   }
   .middle__times__table {
     width: 430px;
-    height: 700px;
+    height: 93vh;
     padding-top: 20px;
   }
   .last__times__table {
     width: 430px;
-    height: 700px;
+    height: 93vh;
     padding-top: 20px;
   }
   .reset__block {
@@ -241,11 +247,12 @@
   }
   .middle__times__table {
     width: 350px;
-    height: 630px;
+    height: 93vh;
   }
   .last__times__table {
     width: 350px;
-    height: 630px;
+    height: 93vh;
+
   }
   .reset__block {
     height: 200px;
@@ -376,11 +383,11 @@
   }
   .middle__times__table {
     width: 270px;
-    height: 500px;
+    height: 93vh;
   }
   .last__times__table {
     width: 270px;
-    height: 500px;
+    height: 93vh;
   }
   .reset__block {
     height: 150px;
@@ -430,11 +437,11 @@
   }
   .middle__times__table {
     width: 240px;
-    height: 450px;
+    height: 93vh;
   }
   .last__times__table {
     width: 240px;
-    height: 450px;
+    height: 93vh;
   }
   .reset__block {
     height: 140px;
@@ -481,11 +488,11 @@
   }
   .middle__times__table {
     width: 210px;
-    height: 400px;
+    height: 93vh;
   }
   .last__times__table {
     width: 210px;
-    height: 400px;
+    height: 93vh;
   }
   .reset__block {
     height: 120px;
@@ -537,11 +544,11 @@
   }
   .middle__times__table {
     width: 180px;
-    height: 360px;
+    height: 93vh;
   }
   .last__times__table {
     width: 180px;
-    height: 360px;
+    height: 93vh;
   }
   .reset__block {
     height: 110px;
@@ -589,11 +596,11 @@
   }
   .middle__times__table {
     width: 150px;
-    height: 330px;
+    height: 93vh;
   }
   .last__times__table {
     width: 150px;
-    height: 330px;
+    height: 93vh;
   }
   .reset__block {
     height: 100px;
