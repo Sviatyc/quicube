@@ -2,22 +2,21 @@
 
 # Quicube
 
-Ласкаво просимо до Quicube - вашого остаточного таймера для кубика Рубіка з пам'яттю попередніх результатів!
+Welcome to Quicube - your ultimate Rubik's Cube timer with memory of past results!
 
-## Особливості:
-1. **Швидкий і Інтуїтивний Таймер**: Вимірюйте швидкість вирішення кубика Рубіка легко.
-2. **Функція Пам'яті**: Слідкуйте за своїми попередніми часами вирішення, щоб відстежити свій прогрес.
-3. **Стильний Дизайн**: Насолоджуйтесь візуально привабливим та простим у використанні інтерфейсом.
-4. **Адаптивний Дизайн**: Сайт Quicube адаптивний і ідеально підходить для використання на телефонах та комп'ютерах.
+## Features:
+1. **Fast and Intuitive Timer**: Measure your Rubik's Cube solving speed with ease.
+2. **Memory Functionality**: Keep track of your past solving times to track your progress.
+3. **Sleek Design**: Enjoy a visually pleasing and user-friendly interface.
+4. **Adaptive Design**: Quicube website is adaptive and perfect for use on phones and computers.
 
-### Як користуватися:
-1. Для запуску таймера на комп'ютерах просто натисніть пробіл.
-2. На телефонах торкніться цифр таймера, щоб запустити таймер.
-3. Зупиніть таймер, як тільки завершите вирішення.
-4. Quicube автоматично збереже ваш час та відобразить його в попередніх результатах.
+### How to Use:
+1. Simply start the timer when you begin solving the Rubik's Cube.
+2. Stop the timer once you've completed the solve.
+3. Quicube will automatically save your time and display it in your past results.
 
-Готуйтеся поліпшити свої навички вирішення кубика Рубіка та викликати себе за допомогою Quicube!
+Get ready to sharpen your Rubik's Cube solving skills and challenge yourself with Quicube!
 
-Для спроби Quicube відвідайте [quicube.netlify.app](https://quicube.netlify.app).
+To try Quicube, visit [quicube.netlify.app](https://quicube.netlify.app).
 
 ---
