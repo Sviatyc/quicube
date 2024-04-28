@@ -17,6 +17,6 @@ Welcome to Quicube - your ultimate Rubik's Cube timer with memory of past result
 
 Get ready to sharpen your Rubik's Cube solving skills and challenge yourself with Quicube!
 
-To try Quicube, visit [quicube.netlify.app](https://quicube.online).
+To try Quicube, visit [quicube.online](https://quicube.online).
 
 ---
